@@ -32,10 +32,13 @@ img {
 
 p {
   font-size: 14px;
+  font-weight: normal;
 }
 
 figcaption {
   font-size: 12px;
+  font-weight: bold;
+  text-align: center;
 }
 
 div.hotspot{
@@ -79,7 +82,7 @@ div.modal div.inner{
   width: 25px;
   background-color: brown;
   border-radius: 75%;
-  opacity: .5;
+  opacity: .20;
 }
 
 #fact1 {
@@ -118,7 +121,7 @@ background-color: brown;
   width: 25px;
   background-color: brown;
   border-radius: 75%;
-  opacity: .5;
+  opacity: .20;
 }
 
 #detail1 {
@@ -137,20 +140,61 @@ top: 18%;
 left: 12%;
 }
 
-#detail4 {
-
-}
-
-#detail5 {
-
-}
-
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .container {
+     max-width: 745px;
+     margin: 0 auto;
+     display: block;
+}
 }
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    img{
+           max-width: 85%;
+           margin: 0 auto;
+           margin-left: auto;
+           margin-right: auto;
+           width: 85%;
+
+         }
+
+         .container {
+           display: block;
+         max-width: 900px;
+         margin: 0 auto;
+       }
+
+       #fact1 {
+       top: 85%;
+       left: 50%;
+       background-color: brown;
+       }
+
+       #fact2 {
+       top: 77%;
+       left: 35%;
+       background-color: brown;
+       }
+
+       #fact3 {
+       top: 70%;
+       left: 70%;
+       background-color: brown;
+       }
+
+       #fact4 {
+       top: 40%;
+       left: 45%;
+       background-color: brown;
+       }
+
+       #fact5 {
+       top: 55%;
+       left: 28%;
+       background-color: brown;
+       }
 }
